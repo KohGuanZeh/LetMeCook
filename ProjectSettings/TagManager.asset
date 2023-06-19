@@ -8,6 +8,7 @@ TagManager:
   - Paper
   - Glass
   - Plastic
+  - tree
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
