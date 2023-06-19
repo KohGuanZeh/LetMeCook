@@ -11,7 +11,7 @@ public class MouseLook : MonoBehaviour
     public InputActionReference horizontalLook;
     public InputActionReference verticalLook;
 
-    public float lookSpeed = 1f;
+    public float lookSpeed = .5f;
     public Transform cameraTransform;
 
     private float pitch;
@@ -19,7 +19,7 @@ public class MouseLook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         horizontalLook.action.performed += HandleHorizontalLookChange;
         verticalLook.action.performed += HandleVerticalLookChange;
     }
@@ -34,7 +34,6 @@ public class MouseLook : MonoBehaviour
     {
         pitch -= obj.ReadValue<float>();
         transform.localRotation = Quaternion.Euler(pitch, yaw , 0);
-
     }
 
     // Update is called once per frame
