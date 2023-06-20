@@ -9,6 +9,8 @@ TagManager:
   - Glass
   - Plastic
   - tree
+  - Utensil
+  - Shower
   layers:
   - Default
   - TransparentFX

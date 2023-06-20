@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Food : MonoBehaviour {
+    bool canBeEaten = false;
+    Utensils usedUtensil;
+
+    void OnTriggerEnter(Collider other) {
+        if (other.tag == "Player" && this.canBeEaten) {
+            this.usedUtensil.ResetPickup();
+            this.gameObject.SetActive(false);
+        } else if (other.tag == "Utensil") {
+            this.usedUtensil = other.GetComponent<Utensils>();
+            this.usedUtensil.PickupFood(this.transform);
+            this.canBeEaten = true;
+        }
+    }
+}
