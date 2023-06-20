@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 1685871975199280068}
   m_Layer: 0
   m_Name: Paper Bin
-  m_TagString: Glass
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 16d242f23385b6645b9a2763e3e32bf8, type: 2}
+  - {fileID: 2100000, guid: 5dab731edd1ad1543b5247632260d9d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b716f8e641354d0438f2cecd75cffb68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoke: {fileID: 5779894137999119725, guid: 1be567860ff38f149972e262ad9aa571, type: 3}
 --- !u!1 &1685871975389236515
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +223,7 @@ GameObject:
   - component: {fileID: 1685871975389236524}
   m_Layer: 0
   m_Name: Plastic Bin
-  m_TagString: Paper
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -270,7 +271,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5dab731edd1ad1543b5247632260d9d8, type: 2}
+  - {fileID: 2100000, guid: 0ba338558506a244ea2088e4f2aba937, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -317,6 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b716f8e641354d0438f2cecd75cffb68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoke: {fileID: 5779894137999119725, guid: 1be567860ff38f149972e262ad9aa571, type: 3}
 --- !u!1 &1685871975678380118
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,7 +587,7 @@ GameObject:
   - component: {fileID: 1685871976525102058}
   m_Layer: 0
   m_Name: Glass Bin
-  m_TagString: Plastic
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -633,7 +635,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ba338558506a244ea2088e4f2aba937, type: 2}
+  - {fileID: 2100000, guid: 16d242f23385b6645b9a2763e3e32bf8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -680,3 +682,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b716f8e641354d0438f2cecd75cffb68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoke: {fileID: 5779894137999119725, guid: 1be567860ff38f149972e262ad9aa571, type: 3}
