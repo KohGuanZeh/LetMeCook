@@ -10,6 +10,7 @@ public class Stamp : MonoBehaviour {
         Policy policy = other.GetComponent<Policy>();
         if (policy != null) {
             if (isApprovalStamp) {
+                Debug.Log("Yes");
                 policy.OnPolicyAccept();
             } else {
                 policy.OnPolicyDecline();
