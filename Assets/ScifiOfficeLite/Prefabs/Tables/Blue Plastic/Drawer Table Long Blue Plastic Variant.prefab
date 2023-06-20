@@ -7,10 +7,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3465074232591431479, guid: 0fc223096406f3d4d964af094cc016ab,
+        type: 3}
+      propertyPath: m_Name
+      value: Drawer Table Blue Plastic
+      objectReference: {fileID: 0}
     - target: {fileID: 454075758230258980, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -151.31
       objectReference: {fileID: 0}
     - target: {fileID: 454075758230258980, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
@@ -20,27 +25,27 @@ PrefabInstance:
     - target: {fileID: 454075758230258980, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 18.550001
       objectReference: {fileID: 0}
     - target: {fileID: 454075758230258980, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 454075758230258980, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 454075758230258980, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 454075758230258980, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 454075758230258980, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
@@ -62,87 +67,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 811742053579231963, guid: 0fc223096406f3d4d964af094cc016ab,
+    - target: {fileID: 3975776617354597990, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43c6c333495c322469f9cf093afac0d9, type: 2}
-    - target: {fileID: 891280711454886662, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 891280711454886663, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 891280711454886665, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250313141522799288, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250313141522799289, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250313141522799301, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250313141522799302, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250313141522799303, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1690293853372923316, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 43c6c333495c322469f9cf093afac0d9, type: 2}
-    - target: {fileID: 2095266082847093294, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2095266082847093294, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 0.9571534
-      objectReference: {fileID: 0}
-    - target: {fileID: 2095266082847093294, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.8354194
-      objectReference: {fileID: 0}
-    - target: {fileID: 2095266082847093294, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2924297026932914705, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43c6c333495c322469f9cf093afac0d9, type: 2}
-    - target: {fileID: 3465074232591431479, guid: 0fc223096406f3d4d964af094cc016ab,
-        type: 3}
-      propertyPath: m_Name
-      value: Drawer Table Long Blue Plastic Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 3975776617354597990, guid: 0fc223096406f3d4d964af094cc016ab,
+    - target: {fileID: 1690293853372923316, guid: 0fc223096406f3d4d964af094cc016ab,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -152,10 +87,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43c6c333495c322469f9cf093afac0d9, type: 2}
-    m_RemovedComponents:
-    - {fileID: 1250313141522799289, guid: 0fc223096406f3d4d964af094cc016ab, type: 3}
-    - {fileID: 1250313141522799288, guid: 0fc223096406f3d4d964af094cc016ab, type: 3}
-    - {fileID: 1250313141522799303, guid: 0fc223096406f3d4d964af094cc016ab, type: 3}
-    - {fileID: 1250313141522799302, guid: 0fc223096406f3d4d964af094cc016ab, type: 3}
-    - {fileID: 1250313141522799301, guid: 0fc223096406f3d4d964af094cc016ab, type: 3}
+    - target: {fileID: 811742053579231963, guid: 0fc223096406f3d4d964af094cc016ab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 43c6c333495c322469f9cf093afac0d9, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fc223096406f3d4d964af094cc016ab, type: 3}

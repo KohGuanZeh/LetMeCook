@@ -43,7 +43,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: beefad33f2b4bf74c8995d985fad4ae0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7b166760b65a3f141b3e498200cc67ca, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CoatMaskMap:
@@ -59,7 +59,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
-        m_Texture: {fileID: 2800000, guid: 77150a14bc2d9f648bfb32d5a905e71d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 16b8f0cb7996e6340a40bbb4f5c443ee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
@@ -91,7 +91,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6fde2ae80dd8b29458632c2a5c051fc8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 101d491b5a9952145a29209704ea3599, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -99,7 +99,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 77150a14bc2d9f648bfb32d5a905e71d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 16b8f0cb7996e6340a40bbb4f5c443ee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -111,11 +111,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 77150a14bc2d9f648bfb32d5a905e71d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 16b8f0cb7996e6340a40bbb4f5c443ee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 07dfb7e31c1fdf0489c2232a0a9a48d7, type: 3}
+        m_Texture: {fileID: 2800000, guid: ce7ebd2631d578441ad6fea6fb794bff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
