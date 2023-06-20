@@ -23,7 +23,8 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] float threshHold;// to set phases of the world
 
     public float pollutionLevel;
-
+    
+    
     // Start is called before the first frame update
     void Start()
     {

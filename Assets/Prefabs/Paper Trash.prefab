@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5489572700653301398}
   m_Layer: 0
   m_Name: Paper Trash
-  m_TagString: Paper
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5dab731edd1ad1543b5247632260d9d8, type: 2}
+  - {fileID: 2100000, guid: 9aaa8a412a8c46e4f96ee6caeeb63238, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
