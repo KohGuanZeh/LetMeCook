@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour {
     [SerializeField] GameObject[] phasesObjList;
     [SerializeField] TextMeshPro calendarDay;
 
+    [SerializeField] Transform xrOrigin;
+    [SerializeField] Transform initPos;
+
     void Awake() {
         // Will only load scene when restart game. And will destroy on load
         GameManager.inst = this;
@@ -84,6 +87,9 @@ public class GameManager : MonoBehaviour {
         ResetTask(mealTakenTask);
         ResetTask(workDoneTask);
         ResetTask(showerTakenTask);
+
+        xrOrigin.position = initPos.position;
+        xrOrigin.rotation = initPos.rotation;
     }
 
     public void SetCalendarDay(int phase) {

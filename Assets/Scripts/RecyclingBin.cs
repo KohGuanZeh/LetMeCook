@@ -10,7 +10,9 @@ public class RecyclingBin : MonoBehaviour
     private int curCapacity = 0;
     public GameObject[] trashes;
     public GameObject fireSmoke;
-    // Start is called before the first frame update
+
+    [SerializeField] bool isFireplace = false;
+
     void Start()
     {
         trashes = new GameObject[trashCapacity];
@@ -27,7 +29,10 @@ public class RecyclingBin : MonoBehaviour
         {
             if (curCapacity < trashCapacity)
             {
-                //GameObject tempSmoke = Instantiate(fireSmoke, transform.position, Quaternion.Euler(0,0,0));
+                if (isFireplace) {
+                    Instantiate(fireSmoke, transform.position, Quaternion.Euler(0,0,0));
+                }
+                
                 col.gameObject.SetActive(false);
                 trashes[curCapacity++].SetActive(true);
                 if (curCapacity == trashCapacity) {
