@@ -27,12 +27,6 @@ public class RecyclingBin : MonoBehaviour
         }
     }
 
-    void Update () {
-        if (Input.GetKeyDown(KeyCode.S)) {
-            Instantiate(fireSmoke, transform.position, Quaternion.Euler(0,0,0));
-        }
-    }
-
     // Check if trash is thrown into the right bin
     void OnTriggerEnter(Collider col)
     {

@@ -34,10 +34,10 @@ public class GameManager : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.A)) {
-            ResetTask(roomCleanedTask);
-            LoadNextPhase();
-        }
+        // if (Input.GetKeyDown(KeyCode.A)) {
+        //     ResetTask(roomCleanedTask);
+        //     LoadNextPhase();
+        // }
     }
 
     public void OnRoomCleaned() {
