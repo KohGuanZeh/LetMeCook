@@ -20,12 +20,6 @@ public class RecyclingBin : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     // Check if trash is thrown into the right bin
     void OnTriggerEnter(Collider col)
     {
@@ -37,7 +31,7 @@ public class RecyclingBin : MonoBehaviour
                 col.gameObject.SetActive(false);
                 trashes[curCapacity++].SetActive(true);
                 if (curCapacity == trashCapacity) {
-                    // Check Task List
+                    GameManager.inst.OnRoomCleaned();
                 }
             }
         }

@@ -9,6 +9,7 @@ public class Food : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Player" && this.canBeEaten) {
             this.usedUtensil.ResetPickup();
+            GameManager.inst.OnFoodEaten();
             this.gameObject.SetActive(false);
         } else if (other.tag == "Utensil") {
             this.usedUtensil = other.GetComponent<Utensils>();

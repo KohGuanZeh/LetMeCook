@@ -1472,7 +1472,6 @@ GameObject:
   - component: {fileID: 1045848416}
   - component: {fileID: 1045848418}
   - component: {fileID: 1045848417}
-  - component: {fileID: 1045848419}
   m_Layer: 0
   m_Name: Camera Offset
   m_TagString: Player
@@ -1525,20 +1524,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1045848419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045848415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab1bccac108f1ec46959720213a412fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showerDuration: 0
-  doneShowering: 0
 --- !u!1 &1170147493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,6 +1644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1316859864}
   - component: {fileID: 1316859865}
+  - component: {fileID: 1316859866}
   m_Layer: 0
   m_Name: Shower Collider
   m_TagString: Shower
@@ -1695,6 +1681,20 @@ CapsuleCollider:
   m_Height: 22.586962
   m_Direction: 1
   m_Center: {x: 0, y: -5.276639, z: 0}
+--- !u!114 &1316859866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316859863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7b0a2890b2b5d46ad385e902d6c732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showerDuration: 0
+  doneShowering: 0
 --- !u!1001 &1382952687
 PrefabInstance:
   m_ObjectHideFlags: 0
