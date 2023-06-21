@@ -111,6 +111,9 @@ public class GameManager : MonoBehaviour {
     public void MarkTaskAsDone(TextMeshPro task) {
         task.color = new Color32(16, 115, 0, 255);
         task.fontStyle = FontStyles.Strikethrough;
+        if (this.CanSleep()) {
+            // UI Prompt to Sleep
+        }
     }
 
     public void ResetTask(TextMeshPro task) {
