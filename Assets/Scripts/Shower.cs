@@ -7,7 +7,7 @@ public class Shower : MonoBehaviour
 {
     [SerializeField] float showerDuration = 0.0f;
     [SerializeField] float showerTimeRequired = 5.0f;
-    [SerializeField] TextMeshProUGUI subtitle;
+    [SerializeField] TextMeshPro subtitle;
 
     private void OnTriggerStay(Collider other) {
         if (other.tag == "Player" && showerDuration < showerTimeRequired) {
@@ -19,7 +19,7 @@ public class Shower : MonoBehaviour
         }
     }
 
-    private IEnumerator TextTimer(TextMeshProUGUI subtitle, string text) {
+    private IEnumerator TextTimer(TextMeshPro subtitle, string text) {
         subtitle.text = text;
         yield return new WaitForSeconds (5);
         subtitle.text = "";

@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] Transform xrOrigin;
     [SerializeField] Transform initPos;
+    [SerializeField] TextMeshPro sleepPrompt;
 
     void Awake() {
         // Will only load scene when restart game. And will destroy on load
@@ -93,6 +94,7 @@ public class GameManager : MonoBehaviour {
         ResetTask(mealTakenTask);
         ResetTask(workDoneTask);
         ResetTask(showerTakenTask);
+        sleepPrompt.text = "";
 
         xrOrigin.position = initPos.position;
         xrOrigin.rotation = initPos.rotation;
@@ -119,6 +121,7 @@ public class GameManager : MonoBehaviour {
         task.fontStyle = FontStyles.Strikethrough;
         if (this.CanSleep()) {
             // UI Prompt to Sleep
+            sleepPrompt.text = "It's time to go to sleep.";
         }
     }
 

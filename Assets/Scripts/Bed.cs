@@ -8,7 +8,7 @@ public class Bed : MonoBehaviour
         if (other.tag == "Player") {
             if (GameManager.inst.CanSleep()) {
                 GameManager.inst.LoadNextPhase();
-                GetComponent<AudioSource>().Play();
+                // GetComponent<AudioSource>().Play();
             } else {
                 // Execute a prompt
             }

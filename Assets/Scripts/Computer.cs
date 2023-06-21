@@ -6,7 +6,7 @@ using TMPro;
 public class Computer : MonoBehaviour
 {
   AirCondition aircon;
-  [SerializeField] TextMeshProUGUI subtitle;
+  [SerializeField] TextMeshPro subtitle;
   private AudioSource thisAudio;
   
   void Start(){
@@ -30,7 +30,7 @@ public class Computer : MonoBehaviour
     }
   }
 
-  private IEnumerator TextTimer(TextMeshProUGUI subtitle, string text) {
+  private IEnumerator TextTimer(TextMeshPro subtitle, string text) {
         subtitle.text = text;
         yield return new WaitForSeconds (5);
         subtitle.text = "";
