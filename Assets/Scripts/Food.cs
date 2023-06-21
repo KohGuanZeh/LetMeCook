@@ -7,7 +7,7 @@ public class Food : MonoBehaviour {
     Utensils usedUtensil;
 
     void OnTriggerEnter(Collider other) {
-        if (other.tag == "Player" && this.canBeEaten) {
+        if (other.tag == "MainCamera" && this.canBeEaten) {
             this.usedUtensil.ResetPickup();
             GameManager.inst.OnFoodEaten();
             this.gameObject.SetActive(false);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shower : MonoBehaviour
 {
     [SerializeField] float showerDuration = 0.0f;
-    [SerializeField] float showerTimeRequired = 7.0f;
+    [SerializeField] float showerTimeRequired = 5.0f;
 
     private void OnTriggerStay(Collider other) {
         if (other.tag == "Player" && showerDuration < showerTimeRequired) {

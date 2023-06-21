@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour {
 
     public void OnFoodEaten() {
         foodEaten += 1;
-        mealTaken = foodEaten == 4;
+        mealTaken = foodEaten == 2;
 
         if (mealTaken) {
             MarkTaskAsDone(mealTakenTask);

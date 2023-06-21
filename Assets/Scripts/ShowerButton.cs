@@ -15,4 +15,9 @@ public class ShowerButton : MonoBehaviour
         }
     }
     
+    void OnTriggerEnter (Collider other) {
+        if (other.tag == "Player" && !showerActive){
+            showerActive = true;
+        }
+    }
 }

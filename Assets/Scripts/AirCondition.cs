@@ -46,13 +46,13 @@ public class AirCondition : MonoBehaviour
         if (on)
         {
             airconAnim.SetBool("on", on);
-            particle.SetActive(true);
+           // particle.SetActive(true);
         }
         else
         {
             on = false;
             airconAnim.SetBool("on", on);
-            particle.SetActive(false);
+          //  particle.SetActive(false);
         }
     }
 
