@@ -82,6 +82,7 @@ public class GameManager : MonoBehaviour {
             phasesObjList[i].SetActive(phase == i + 1);
         }
         // Screen Fade Animation
+        foodEaten = 0;
         roomCleaned = mealTaken = workDone = showerTaken = false;
         ResetTask(roomCleanedTask);
         ResetTask(mealTakenTask);

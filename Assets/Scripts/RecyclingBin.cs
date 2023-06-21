@@ -26,6 +26,12 @@ public class RecyclingBin : MonoBehaviour
         }
     }
 
+    void Update () {
+        if (Input.GetKeyDown(KeyCode.S)) {
+            Instantiate(fireSmoke, transform.position, Quaternion.Euler(0,0,0));
+        }
+    }
+
     // Check if trash is thrown into the right bin
     void OnTriggerEnter(Collider col)
     {
@@ -36,9 +42,9 @@ public class RecyclingBin : MonoBehaviour
                 if (isFireplace) {
                     Instantiate(fireSmoke, transform.position, Quaternion.Euler(0,0,0));
                 } else {
-                    trashes[curCapacity++].SetActive(true);
+                    trashes[curCapacity].SetActive(true);
                 }
-
+                curCapacity++;
                 col.gameObject.SetActive(false);
                 if (curCapacity == trashCapacity) {
                     GameManager.inst.OnRoomCleaned();

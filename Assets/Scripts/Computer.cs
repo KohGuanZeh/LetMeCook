@@ -6,28 +6,28 @@ using TMPro;
 public class Computer : MonoBehaviour
 {
   AirCondition aircon;
-
-  [SerializeField] public GameObject airconPromptText;
-  [SerializeField] GameObject workCompletedText;
-
-  void Start(){
-    aircon = FindObjectOfType<AirCondition>();
-  }
+  [SerializeField] TextMeshProUGUI subtitle;
 
   public void doWork()
   {
     if (aircon.on){
       GameManager.inst.OnWorkDone();
-      workCompletedText.SetActive(true);
-      airconPromptText.SetActive(false);
+      StartCoroutine(TextTimer(subtitle, "Work Completed"));
     } else {
-      airconPromptText.SetActive(true);
+      StartCoroutine(TextTimer(subtitle, "Its too hot to do any work"));
     }
   }
 
   private void OnTriggerEnter(Collider other){
     if (other.tag == "Player") {
+      aircon = FindObjectOfType<AirCondition>();
       doWork();
     }
+  }
+
+  private IEnumerator TextTimer(TextMeshProUGUI subtitle, string text) {
+        subtitle.text = text;
+        yield return new WaitForSeconds (5);
+        subtitle.text = "";
   }
 }
