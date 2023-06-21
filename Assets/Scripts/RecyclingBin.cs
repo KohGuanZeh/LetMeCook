@@ -15,6 +15,10 @@ public class RecyclingBin : MonoBehaviour
 
     void Start()
     {
+        if (isFireplace) {
+            return;
+        }
+
         trashes = new GameObject[trashCapacity];
         for (int i = 1; i <= trashCapacity; ++i)
         {
@@ -31,10 +35,11 @@ public class RecyclingBin : MonoBehaviour
             {
                 if (isFireplace) {
                     Instantiate(fireSmoke, transform.position, Quaternion.Euler(0,0,0));
+                } else {
+                    trashes[curCapacity++].SetActive(true);
                 }
-                
+
                 col.gameObject.SetActive(false);
-                trashes[curCapacity++].SetActive(true);
                 if (curCapacity == trashCapacity) {
                     GameManager.inst.OnRoomCleaned();
                 }
