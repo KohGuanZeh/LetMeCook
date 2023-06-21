@@ -10,6 +10,8 @@ public class Food : MonoBehaviour {
         if (other.tag == "MainCamera" && this.canBeEaten) {
             this.usedUtensil.ResetPickup();
             GameManager.inst.OnFoodEaten();
+            AudioSource audio = other.GetComponent<AudioSource>();
+            if(audio) audio.Play();
             this.gameObject.SetActive(false);
         } else if (other.tag == "Utensil") {
             this.usedUtensil = other.GetComponent<Utensils>();

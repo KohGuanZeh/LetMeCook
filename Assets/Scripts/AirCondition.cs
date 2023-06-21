@@ -11,34 +11,20 @@ public class AirCondition : MonoBehaviour
 
     public float lerpSpeed = 0.5f;
     public float t = 0f;
+    private AudioSource thisAudio;
     // Start is called before the first frame update
     void Start()
     {
         on = false;
         airconAnim = GetComponent<Animator>();
         temp = 16;
+        thisAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Anim();
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            addTemp(5);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            decreaseTemp(5);
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (!on)
-            {
-                on = true;
-            }
-            else { on = false; }
-        }
     }
 
     void Anim()
@@ -46,12 +32,14 @@ public class AirCondition : MonoBehaviour
         if (on)
         {
             airconAnim.SetBool("on", on);
+            thisAudio.Play();
            // particle.SetActive(true);
         }
         else
         {
             on = false;
             airconAnim.SetBool("on", on);
+            thisAudio.Stop();
           //  particle.SetActive(false);
         }
     }

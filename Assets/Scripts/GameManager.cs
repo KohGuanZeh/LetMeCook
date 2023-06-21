@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     public static GameManager inst;
-
+    private AudioSource thisAudio;
     [SerializeField] int phase = 1;
     [SerializeField] bool roomCleaned;
     [SerializeField] TextMeshPro roomCleanedTask;
@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour {
     void Awake() {
         // Will only load scene when restart game. And will destroy on load
         GameManager.inst = this;
+        thisAudio = GetComponent<AudioSource>();
         phasesObjList[0].SetActive(true);
         phasesObjList[1].SetActive(false);
         phasesObjList[2].SetActive(false);
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour {
         roomCleaned = true;
         MarkTaskAsDone(roomCleanedTask);
         // On fulfilled, reflect on UI + SFX
+        thisAudio.Play();
     }
 
     public void OnFoodEaten() {
@@ -51,6 +53,7 @@ public class GameManager : MonoBehaviour {
         if (mealTaken) {
             MarkTaskAsDone(mealTakenTask);
             // UI + SFX feedback
+            thisAudio.Play();
         }
     }
 
@@ -58,12 +61,14 @@ public class GameManager : MonoBehaviour {
         workDone = true;
         MarkTaskAsDone(workDoneTask);
         // On fulfilled, reflect on UI + SFX
+        thisAudio.Play();
     }
     
     public void OnShowerTaken() {
         showerTaken = true;
         MarkTaskAsDone(showerTakenTask);
         // On fulfilled, reflect on UI + SFX
+        thisAudio.Play();
     }
 
     public bool CanSleep() {
