@@ -44376,7 +44376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4469749203399680, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4469749203399680, guid: be6847dd39ab95f4daa2ed98e4f90564, type: 3}
       propertyPath: m_LocalScale.x
@@ -58212,6 +58212,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1804484292}
   - {fileID: 1250796273}
   m_Father: {fileID: 2099608288}
   m_RootOrder: 2
@@ -58244,9 +58245,10 @@ MonoBehaviour:
   trashCapacity: 1
   curCapacity: 0
   trashes: []
-  fireSmoke: {fileID: 4821155846762205913, guid: 98b5547f41b57e94a97a3e7963fe7863,
+  fireSmoke: {fileID: 3006253588106743489, guid: 625bbf153dff1d6468b21944602c44c8,
     type: 3}
   isFireplace: 1
+  particleSpawnPos: {fileID: 1804484292}
 --- !u!1 &1633814399
 GameObject:
   m_ObjectHideFlags: 0
@@ -62781,9 +62783,10 @@ MonoBehaviour:
   trashCapacity: 3
   curCapacity: 0
   trashes: []
-  fireSmoke: {fileID: 4821155846762205913, guid: 98b5547f41b57e94a97a3e7963fe7863,
+  fireSmoke: {fileID: 3006253588106743489, guid: 625bbf153dff1d6468b21944602c44c8,
     type: 3}
   isFireplace: 0
+  particleSpawnPos: {fileID: 1744880061}
 --- !u!4 &1744880061
 Transform:
   m_ObjectHideFlags: 0
@@ -64885,6 +64888,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802471440}
   m_Mesh: {fileID: 5910462641407258729, guid: e3aba624382e9d1429ef27f6377528b9, type: 3}
+--- !u!1 &1804484291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804484292}
+  m_Layer: 0
+  m_Name: ParticleSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1804484292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804484291}
+  m_LocalRotation: {x: 0.7071068, y: 4.072997e-15, z: -0.000000029802322, w: 0.7071067}
+  m_LocalPosition: {x: -0.3237758, y: -0.02084285, z: -0.6623036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1633051196}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1805390741
 GameObject:
   m_ObjectHideFlags: 0

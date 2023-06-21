@@ -12,6 +12,7 @@ public class RecyclingBin : MonoBehaviour
     public GameObject fireSmoke;
 
     [SerializeField] bool isFireplace = false;
+    [SerializeField] Transform particleSpawnPos;
 
     void Start()
     {
@@ -40,7 +41,8 @@ public class RecyclingBin : MonoBehaviour
             if (curCapacity < trashCapacity)
             {
                 if (isFireplace) {
-                    Instantiate(fireSmoke, transform.position, Quaternion.Euler(0,0,0));
+                    Vector3 pos = particleSpawnPos ? particleSpawnPos.position : transform.position;
+                    Instantiate(fireSmoke, pos, Quaternion.Euler(0,0,0));
                 } else {
                     trashes[curCapacity].SetActive(true);
                 }
